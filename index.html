@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <img src="assets/logo.png" alt="Logo Esports">
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2 class="tittle">Assistente de Meta</h2>
+                <p>Pergunte sobre a estratégia, build e dicas para seus jogos</p>
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini">
+                    
+                    <select id="gameSelect">
+                        <option value="league-of-legends">League of Legends</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="dota-2">Dota 2</option>
+                        <option value="cs-go">CS:GO</option>
+                        <option value="overwatch">Overwatch</option>
+                        <option value="apex-legends">Apex Legends</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="call-of-duty">Call of Duty</option>
+                        <option value="fifa">FIFA</option>
+                        <option value="rocket-league">Rocket League</option>
+                        <option value="rainbow-six">Rainbow Six</option>
+                        <option value="pubg">PUBG</option>
+                        <option value="mobile-legends">Mobile Legends</option>
+                        <option value="clash-royale">Clash Royale</option>
+                        <option value="starcraft-2">StarCraft II</option>
+                        <option value="hearthstone">Hearthstone</option>
+                        <option value="magic-the-gathering">Magic: The Gathering</option>
+                        <option value="teamfight-tactics">Teamfight Tactics</option>
+                        <option value="brawl-stars">Brawl Stars</option>
+                        <option value="genshin-impact">Genshin Impact</option>
+                        <option value="pokemon-go">Pokémon GO</option>
+                        <option value="clash-of-clans">Clash of Clans</option>
+                        <option value="world-of-warcraft">World of Warcraft</option>
+                        <option value="diablo-iv">Diablo IV</option>
+                        <option value="final-fantasy-xiv">Final Fantasy XIV</option>
+                        <option value="lost-ark">Lost Ark</option>
+                    </select>
+
+                    <input id="questionInput" type="text" placeholder="Ex: Qual é a melhor build para o campeão X?">
+                    <button id="askButton">
+                        Perguntar
+                    </button>
+
+                </form>
+
+                <div id="aiResponse"></div>
+                    <div class="response-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
